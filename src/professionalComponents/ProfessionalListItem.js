@@ -1,6 +1,4 @@
 import React from 'react';
-import Box from '@material-ui/core/Box'
-import Container from '@material-ui/core/Container';
 import PLACEHOLDERIMAGE from '../assets/imgplaceholder.jpg'
 
 class ProfessionalListItem extends React.Component {
@@ -8,16 +6,18 @@ class ProfessionalListItem extends React.Component {
     render() {
         return (
             <div
-            className="professionalListItem"
-            style={{backgroundImage: 'url(../logo.svg)'}}
+                className="listItem"
             >
-                <p className="title">
-                    This is a placeholder item. Wow!
-                </p>
-                <p className="description">
-                    Here i can put some more cool things about this placeholder!
-                </p>
-            </div>
+                <img src={PLACEHOLDERIMAGE}/>
+                <div className="text">
+                    <p>
+                        Title
+                    </p>
+                    <p>
+                        Describe!!!
+                    </p>
+                </div>
+            </div >
         )
     }
 }
