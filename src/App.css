@@ -40,4 +40,9 @@
 .toolbar {
   background-color: #FFFDF8;
   color: #131313;
+  overflow: auto;
+}
+
+.button {
+  text-transform: none;
 }
