@@ -8,13 +8,13 @@ class ProfessionalListItem extends React.Component {
             <div
                 className="listItem"
             >
-                <img src={PLACEHOLDERIMAGE}/>
+                <img src={require("../../" + this.props.PicPath)} />
                 <div className="text">
                     <p>
-                        Title
+                        {this.props.Name}
                     </p>
                     <p>
-                        Describe!!!
+                        {this.props.Description}
                     </p>
                 </div>
             </div >

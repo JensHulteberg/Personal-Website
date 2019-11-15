@@ -4,8 +4,8 @@ import './App.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import ProfessionalListItem from './professionalComponents/ProfessionalListItem'
-import ProfessionalSidebar from './professionalComponents/ProfessionalSidebar'
 import ProfessionalTopbar from './professionalComponents/ProfessionalTopbar'
+import FeedCreator from './FeedCreator'
 
 function App() {
 
@@ -19,9 +19,7 @@ function App() {
 
 
         <main className="content">
-          <ProfessionalListItem />
-          <ProfessionalListItem />
-          <ProfessionalListItem />
+          <FeedCreator />
         </main>
       </div>
     </div>
