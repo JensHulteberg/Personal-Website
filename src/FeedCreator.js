@@ -14,12 +14,11 @@ class FeedCreator extends React.Component {
                 {Projects.map(
                     function (element, index) {
                         return (
-                        <div key={index}>
                             <ProfessionalListItem
+                                key={index}
                                 Name={element.Name}
                                 Description={element.Description}
                                 PicPath={element.PicPath} />
-                        </div>
                         )
                     }
                 )}

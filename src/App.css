@@ -6,26 +6,40 @@
 }
 
 .content {
+  padding-top: 64px;
   flex-grow: 1;
   background-color: #FFFDF8;
-  padding: 0;
+}
+
+.listCard {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 16px;
 }
 
 .listItem {
   position: relative;
-  width: 100%;
-  color: #FFFDF8;
-  background-size: contain;
+  width: 70vw;
+  height: 85vh;
+  color: #131313;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 
 .listItem img {
+  height: 80%;
   width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
 }
 
 .text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 20%;
+}
+
+.description {
+  
 }
 
 .sidebar {
