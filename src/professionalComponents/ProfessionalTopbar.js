@@ -34,17 +34,17 @@ class ProfessionalTopbar extends React.Component {
                                     <Grid container
                                         spacing={1}>
                                         <Grid item>
-                                            <Typography>
+                                            <Typography className="topbarButton" onClick={console.log("Hello?")}>
                                                 Profile
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography>
+                                            <Typography className="topbarButton">
                                                 Contact
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography>
+                                            <Typography className="topbarButton">
                                                 Blog
                                             </Typography>
                                         </Grid>

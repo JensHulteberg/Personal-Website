@@ -43,6 +43,11 @@
   overflow: auto;
 }
 
-.button {
-  text-transform: none;
+.topbarButton {
+
+}
+
+.topbarButton:hover {
+  color: blue;
+  cursor: default;
 }
