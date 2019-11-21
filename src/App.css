@@ -57,11 +57,24 @@
   overflow: auto;
 }
 
-.topbarButton {
-
-}
-
 .topbarButton:hover {
   color: blue;
   cursor: default;
+}
+
+.cardImg {
+  object-fit: cover;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.cardTextWraper {
+  height:100%;
+  width:100%;
+  display: table;
+}
+
+.cardText {
+  display: table-cell;
+  vertical-align: middle;
 }

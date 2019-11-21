@@ -5,7 +5,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import ProfessionalListItem from './professionalComponents/ProfessionalListItem'
 import ProfessionalTopbar from './professionalComponents/ProfessionalTopbar'
+import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 import FeedCreator from './FeedCreator'
+
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
 
 
         <main className="content">
+          <ProfessionalInfoCard />
           <FeedCreator />
         </main>
       </div>
