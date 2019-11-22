@@ -2,6 +2,7 @@ import React from 'react';
 import Projects from './assets/Projects'
 import { ENETUNREACH } from 'constants';
 import ProfessionalListItem from './professionalComponents/ProfessionalListItem'
+import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 
 class FeedCreator extends React.Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class FeedCreator extends React.Component {
                 {Projects.map(
                     function (element, index) {
                         return (
-                            <ProfessionalListItem
+                            <ProfessionalInfoCard
                                 key={index}
                                 Name={element.Name}
                                 Description={element.Description}

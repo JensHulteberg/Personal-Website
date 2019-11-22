@@ -11,25 +11,28 @@ import slugman from '../assets/slugman_profile.png'
 class ProfessionalInfoCard extends React.Component {
 
     render() {
+
         return (
-            <div>
-                <Grid
-                    container
-                    direction="row"
-                    justify="flex-start"
-                    alignItems="stretch"
-                >
-                    <Grid item xs={6}>
-                        <img className="cardImg" src={slugman} />
+            <div className="infoCardWraper">
+                <div className="ProfessionalInfoCard" id="infoCard">
+                    <Grid
+                        container
+                        direction="row"
+                        justify="center"
+                        alignItems="stretch"
+                    >
+                        <Grid item xs={6}>
+                            <img className="cardImg" src={require("../../" + this.props.PicPath)} />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <div className="cardTextWraper">
+                                <p className="cardText">
+                                    {this.props.Name}
+                                </p>
+                            </div>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={6}>
-                        <div className="cardTextWraper">
-                            <p className="cardText">
-                                Testing this out!
-                            </p>
-                        </div>
-                    </Grid>
-                </Grid>
+                </div>
             </div>
         )
     }
