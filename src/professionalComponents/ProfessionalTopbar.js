@@ -23,29 +23,35 @@ class ProfessionalTopbar extends React.Component {
                             container
                         >
                             <Grid item>
-                                <Box fontWeight="fontWeightLight">
-                                    <Typography>
+                                <Typography>
+                                    <Box fontWeight="fontWeightLight">
                                         Jens Hulteberg
-                                    </Typography>
-                                </Box>
+                                    </Box>
+                                </Typography>
                             </Grid>
                             <Grid item>
                                 <Box fontWeight="fontWeightLight">
                                     <Grid container
                                         spacing={1}>
                                         <Grid item>
-                                            <Typography className="topbarButton" onClick={console.log("Hello?")}>
-                                                Profile
+                                            <Typography className="topbarButton" m={1} onClick={console.log("Hello?")}>
+                                                <Box fontWeight="fontWeightLight">
+                                                    Profile
+                                                </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
                                             <Typography className="topbarButton">
-                                                Contact
+                                                <Box fontWeight="fontWeightLight">
+                                                    Contact
+                                                </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
                                             <Typography className="topbarButton">
-                                                Blog
+                                                <Box fontWeight="fontWeightLight">
+                                                    Blog
+                                                </Box>
                                             </Typography>
                                         </Grid>
                                     </Grid>

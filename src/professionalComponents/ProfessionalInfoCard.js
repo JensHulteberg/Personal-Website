@@ -14,7 +14,7 @@ class ProfessionalInfoCard extends React.Component {
 
         return (
             <div className="infoCardWraper">
-                <div className="ProfessionalInfoCard" id="infoCard">
+                <div className="ProfessionalInfoCard">
                     <Grid
                         container
                         direction="row"
@@ -26,9 +26,18 @@ class ProfessionalInfoCard extends React.Component {
                         </Grid>
                         <Grid item xs={6}>
                             <div className="cardTextWraper">
-                                <p className="cardText">
-                                    {this.props.Name}
-                                </p>
+                                <div className="cardText">
+                                    <Typography>
+                                        <Box fontWeight="fontWeightLight">
+                                            <p>
+                                                {this.props.Name}
+                                            </p>
+                                            <p>
+                                                {this.props.Description}
+                                            </p>
+                                        </Box>
+                                    </Typography>
+                                </div>
                             </div>
                         </Grid>
                     </Grid>
