@@ -5,6 +5,7 @@ import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
 import Profile from './General/Profile'
+import Projects from './assets/Projects'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
@@ -37,6 +38,7 @@ class Site extends React.Component {
         }
 
 
+
         return (
             <div>
                 <Router>
@@ -54,6 +56,18 @@ class Site extends React.Component {
                                     <Route path="/blog">
                                         <div> <TopPresentation text={"Blog"} /> Placeholder blog page! </div>
                                     </Route>
+                                    {Projects.map(
+                                        function (element, index) {
+                                            const TagName = element.ComponentName;
+                                            return (
+                                                <div>
+                                                    <Route path={element.Link}>
+                                                        {element.ComponentName}
+                                                    </Route>
+                                                </div>
+                                            )
+                                        }
+                                    )}
                                 </div>
                             </Switch>
                         </main>

@@ -19,7 +19,9 @@ class FeedCreator extends React.Component {
                                 key={index}
                                 Name={element.Name}
                                 Description={element.Description}
-                                PicPath={element.PicPath} />
+                                PicPath={element.PicPath}
+                                Link={element.Link}
+                                />
                         )
                     }
                 )}

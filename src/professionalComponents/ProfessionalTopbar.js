@@ -14,7 +14,6 @@ class ProfessionalTopbar extends React.Component {
 
 
     render() {
-
         return (
             <div className="Topbar">
                 <AppBar position="fixed">
@@ -36,7 +35,7 @@ class ProfessionalTopbar extends React.Component {
                                         spacing={1}>
                                         <Grid item>
                                             <Link className="link" to="/">
-                                                <Typography className="topbarButton" style={this.props.activePage == "profile" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("profile")}>
+                                                <Typography className="topbarButton" style={window.location.pathname == "/" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("profile")}>
                                                     <Box fontWeight="fontWeightLight">
                                                         Profile
                                                 </Box>
@@ -45,7 +44,7 @@ class ProfessionalTopbar extends React.Component {
                                         </Grid>
                                         <Grid item>
                                             <Link className="link" to="/portfolio">
-                                                <Typography className="topbarButton" style={this.props.activePage == "portfolio" ? { color: "#131313" } : { color: "#848484" }} m={1} onClick={() => this.props.changePage("portfolio")}>
+                                                <Typography className="topbarButton" style={window.location.pathname == "/portfolio" ? { color: "#131313" } : { color: "#848484" }} m={1} onClick={() => this.props.changePage("portfolio")}>
                                                     <Box fontWeight="fontWeightLight">
                                                         Portfolio
                                                 </Box>
@@ -54,7 +53,7 @@ class ProfessionalTopbar extends React.Component {
                                         </Grid>
                                         <Grid item>
                                             <Link className="link" to="/blog">
-                                                <Typography className="topbarButton" style={this.props.activePage == "blog" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("blog")}>
+                                                <Typography className="topbarButton" style={window.location.pathname == "/blog" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("blog")}>
                                                     <Box fontWeight="fontWeightLight">
                                                         Blog
                                                 </Box>

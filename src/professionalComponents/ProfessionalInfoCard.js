@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import PLACEHOLDERIMAGE from '../assets/imgplaceholder.jpg'
 import slugman from '../assets/slugman_profile.png'
+import Link from 'react-router-dom/Link'
 
 class ProfessionalInfoCard extends React.Component {
 
@@ -14,34 +15,36 @@ class ProfessionalInfoCard extends React.Component {
 
         return (
             <div className="infoCardWraper">
-                <div className="ProfessionalInfoCard" onClick={() => this.props.history.push('/General/Profile')}>
-                    <Grid
-                        container
-                        direction="row"
-                        justify="center"
-                        alignItems="stretch"
-                    >
-                        <Grid item xs={6}>
-                            <img className="cardImg" src={require("../../" + this.props.PicPath)} />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <div className="cardTextWraper">
-                                <div className="cardText">
-                                    <Typography>
-                                        <Box fontWeight="fontWeightLight">
-                                            <p>
-                                                {this.props.Name}
-                                            </p>
-                                            <p>
-                                                {this.props.Description}
-                                            </p>
-                                        </Box>
-                                    </Typography>
+                <Link className="link" to={this.props.Link}>
+                    <div className="ProfessionalInfoCard">
+                        <Grid
+                            container
+                            direction="row"
+                            justify="center"
+                            alignItems="stretch"
+                        >
+                            <Grid item xs={6}>
+                                <img className="cardImg" src={require("../../" + this.props.PicPath)} />
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="cardTextWraper">
+                                    <div className="cardText">
+                                        <Typography>
+                                            <Box fontWeight="fontWeightLight">
+                                                <p>
+                                                    {this.props.Name}
+                                                </p>
+                                                <p>
+                                                    {this.props.Description}
+                                                </p>
+                                            </Box>
+                                        </Typography>
+                                    </div>
                                 </div>
-                            </div>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </div>
+                    </div>
+                </Link>
             </div>
         )
     }

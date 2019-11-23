@@ -6,13 +6,15 @@ class TopPresentation extends React.Component {
     render() {
         return (
             <div className="infoCardWraper">
-                <Typography>
-                    <Box fontWeight="fontWeightLight">
-                        <div className="infoText">
-                            {this.props.text}
-                        </div>
-                    </Box>
-                </Typography>
+                <div className="topPresentation">
+                    <Typography>
+                        <Box fontWeight="fontWeightLight">
+                            <div className="infoText">
+                                {this.props.text}
+                            </div>
+                        </Box>
+                    </Typography>
+                </div>
             </div>
         )
     }
