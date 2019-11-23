@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
+import Link from "react-router-dom/Link"
 
 class ProfessionalTopbar extends React.Component {
 
@@ -34,25 +35,31 @@ class ProfessionalTopbar extends React.Component {
                                     <Grid container
                                         spacing={1}>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "profile" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("profile")}>
-                                                <Box fontWeight="fontWeightLight">
-                                                    Profile
+                                            <Link className="link" to="/">
+                                                <Typography className="topbarButton" style={this.props.activePage == "profile" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("profile")}>
+                                                    <Box fontWeight="fontWeightLight">
+                                                        Profile
                                                 </Box>
-                                            </Typography>
+                                                </Typography>
+                                            </Link>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "portfolio" ? { color: "#131313" } : { color: "#848484" }} m={1} onClick={() => this.props.changePage("portfolio")}>
-                                                <Box fontWeight="fontWeightLight">
-                                                    Portfolio
+                                            <Link className="link" to="/portfolio">
+                                                <Typography className="topbarButton" style={this.props.activePage == "portfolio" ? { color: "#131313" } : { color: "#848484" }} m={1} onClick={() => this.props.changePage("portfolio")}>
+                                                    <Box fontWeight="fontWeightLight">
+                                                        Portfolio
                                                 </Box>
-                                            </Typography>
+                                                </Typography>
+                                            </Link>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "blog" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("blog")}>
-                                                <Box fontWeight="fontWeightLight">
-                                                    Blog
+                                            <Link className="link" to="/blog">
+                                                <Typography className="topbarButton" style={this.props.activePage == "blog" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("blog")}>
+                                                    <Box fontWeight="fontWeightLight">
+                                                        Blog
                                                 </Box>
-                                            </Typography>
+                                                </Typography>
+                                            </Link>
                                         </Grid>
                                     </Grid>
                                 </Box>

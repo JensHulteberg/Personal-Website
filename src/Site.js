@@ -6,6 +6,8 @@ import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
 import Profile from './General/Profile'
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
 class Site extends React.Component {
     constructor(props) {
         super(props);
@@ -34,22 +36,29 @@ class Site extends React.Component {
             page = <div> There is no path for this link. I dont even know how you got here! </div>
         }
 
-        import {
-            BrowserRouter as Router,
-            Switch,
-            Route,
-            Link
-        } from "react-router-dom";
-
 
         return (
             <div>
-                <ProfessionalTopbar changePage={this.changePage} activePage={this.state.activePage} />
-                <div className="root">
-                    <main className="content">
-                        {page}
-                    </main>
-                </div>
+                <Router>
+                    <ProfessionalTopbar changePage={this.changePage} activePage={this.state.activePage} />
+                    <div className="root">
+                        <main className="content">
+                            <Switch>
+                                <div>
+                                    <Route exact path="/">
+                                        <div> <TopPresentation text={"Profile"} /> <Profile /> </div>
+                                    </Route>
+                                    <Route path="/portfolio">
+                                        <div> <TopPresentation text={"Portfolio"} /> <FeedCreator /> </div>
+                                    </Route>
+                                    <Route path="/blog">
+                                        <div> <TopPresentation text={"Blog"} /> Placeholder blog page! </div>
+                                    </Route>
+                                </div>
+                            </Switch>
+                        </main>
+                    </div>
+                </Router>
             </div>
         )
     }

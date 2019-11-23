@@ -92,6 +92,10 @@
   text-decoration: underline;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .cardImg {
   object-fit: cover;
   width: 100%;
