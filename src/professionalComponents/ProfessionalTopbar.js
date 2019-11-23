@@ -34,21 +34,21 @@ class ProfessionalTopbar extends React.Component {
                                     <Grid container
                                         spacing={1}>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "profile" ? {color: "#131313"} : {color : "#848484"}} m={1} onClick={() => this.props.changePage("profile")}>
+                                            <Typography className="topbarButton" style={this.props.activePage == "profile" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("profile")}>
                                                 <Box fontWeight="fontWeightLight">
                                                     Profile
                                                 </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "contact" ? {color: "#131313"} : {color : "#848484"}} onClick={() => this.props.changePage("contact")}>
+                                            <Typography className="topbarButton" style={this.props.activePage == "portfolio" ? { color: "#131313" } : { color: "#848484" }} m={1} onClick={() => this.props.changePage("portfolio")}>
                                                 <Box fontWeight="fontWeightLight">
-                                                    Contact
+                                                    Portfolio
                                                 </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton" style={this.props.activePage == "blog" ? {color: "#131313"} : {color : "#848484"}} onClick={() => this.props.changePage("blog")}>
+                                            <Typography className="topbarButton" style={this.props.activePage == "blog" ? { color: "#131313" } : { color: "#848484" }} onClick={() => this.props.changePage("blog")}>
                                                 <Box fontWeight="fontWeightLight">
                                                     Blog
                                                 </Box>

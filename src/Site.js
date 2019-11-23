@@ -4,6 +4,7 @@ import ProfessionalTopbar from './professionalComponents/ProfessionalTopbar'
 import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
+import Profile from './General/Profile'
 
 class Site extends React.Component {
     constructor(props) {
@@ -21,17 +22,25 @@ class Site extends React.Component {
     render() {
         var page;
 
-        if (this.state.activePage == "profile") {
-            page = <div><TopPresentation /><FeedCreator /></div>
+        if (this.state.activePage == "portfolio") {
+            page = <div><TopPresentation text={"Portfolio"} /><FeedCreator /></div>
         }
-        else if (this.state.activePage == "contact") {
-            page = <div> Placeholder contact page! </div>
+        else if (this.state.activePage == "profile") {
+            page = <div> <TopPresentation text={"Profile"} /> <Profile /> </div>
         }
         else if (this.state.activePage == "blog") {
-            page = <div> Placeholder blog page! </div>
+            page = <div> <TopPresentation text={"Blog"} /> Placeholder blog page! </div>
         } else {
             page = <div> There is no path for this link. I dont even know how you got here! </div>
         }
+
+        import {
+            BrowserRouter as Router,
+            Switch,
+            Route,
+            Link
+        } from "react-router-dom";
+
 
         return (
             <div>

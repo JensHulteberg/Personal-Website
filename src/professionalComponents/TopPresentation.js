@@ -8,9 +8,9 @@ class TopPresentation extends React.Component {
             <div className="infoCardWraper">
                 <Typography>
                     <Box fontWeight="fontWeightLight">
-                        <p className="infoText">
-                            Hello! I am Jens Hulteberg, UX designer, software developer and nerd. This is a site for all kinds of things I do. This is the professional version so if you are looking to hire me please do check out my work bellow.
-                        </p>
+                        <div className="infoText">
+                            {this.props.text}
+                        </div>
                     </Box>
                 </Typography>
             </div>

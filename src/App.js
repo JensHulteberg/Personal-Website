@@ -9,6 +9,7 @@ import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
 import Site from './Site'
+import { borderRadius } from '@material-ui/system';
 
 
 
@@ -19,7 +20,9 @@ function App() {
       <header>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       </header>
-      <Site />
+      <body className="body">
+        <Site />
+      </body>
     </div>
   );
 }
