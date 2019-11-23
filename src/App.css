@@ -1,6 +1,10 @@
 .main {
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .root {
   display: flex;
 }
@@ -57,10 +61,17 @@
   overflow: auto;
 }
 
+.topbarButton {
+  transition: color .5s ease;
+}
+
 .topbarButton:hover {
-  color: blue;
-  cursor: default;
-  font-weight: 200;
+  color: #15A0EE !important;
+  cursor: pointer;
+}
+
+.topbarButton:active {
+  text-decoration: underline;
 }
 
 .cardImg {

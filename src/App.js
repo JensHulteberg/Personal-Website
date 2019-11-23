@@ -8,6 +8,7 @@ import ProfessionalTopbar from './professionalComponents/ProfessionalTopbar'
 import ProfessionalInfoCard from './professionalComponents/ProfessionalInfoCard'
 import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
+import Site from './Site'
 
 
 
@@ -18,15 +19,7 @@ function App() {
       <header>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       </header>
-      <ProfessionalTopbar />
-      <div className="root">
-
-
-        <main className="content">
-          <TopPresentation />
-          <FeedCreator />
-        </main>
-      </div>
+      <Site />
     </div>
   );
 }

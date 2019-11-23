@@ -34,21 +34,21 @@ class ProfessionalTopbar extends React.Component {
                                     <Grid container
                                         spacing={1}>
                                         <Grid item>
-                                            <Typography className="topbarButton" m={1} onClick={console.log("Hello?")}>
+                                            <Typography className="topbarButton" style={this.props.activePage == "profile" ? {color: "#131313"} : {color : "#848484"}} m={1} onClick={() => this.props.changePage("profile")}>
                                                 <Box fontWeight="fontWeightLight">
                                                     Profile
                                                 </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton">
+                                            <Typography className="topbarButton" style={this.props.activePage == "contact" ? {color: "#131313"} : {color : "#848484"}} onClick={() => this.props.changePage("contact")}>
                                                 <Box fontWeight="fontWeightLight">
                                                     Contact
                                                 </Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography className="topbarButton">
+                                            <Typography className="topbarButton" style={this.props.activePage == "blog" ? {color: "#131313"} : {color : "#848484"}} onClick={() => this.props.changePage("blog")}>
                                                 <Box fontWeight="fontWeightLight">
                                                     Blog
                                                 </Box>
