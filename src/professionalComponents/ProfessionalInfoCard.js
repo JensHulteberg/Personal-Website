@@ -16,7 +16,7 @@ class ProfessionalInfoCard extends React.Component {
         return (
             <div className="infoCardWraper">
                 <Link className="link" to={this.props.Link}>
-                    <div className="ProfessionalInfoCard">
+                    <div className="ProfessionalInfoCard shadowed hoverable">
                         <Grid
                             container
                             direction="row"

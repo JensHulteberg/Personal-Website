@@ -6,6 +6,9 @@ import TopPresentation from './professionalComponents/TopPresentation'
 import FeedCreator from './FeedCreator'
 import Profile from './General/Profile'
 import Projects from './assets/Projects'
+import BlogPost from './Blog/blog_post'
+
+import WaveLab from './Projects/WaveLab'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
@@ -23,22 +26,6 @@ class Site extends React.Component {
     }
 
     render() {
-        var page;
-
-        if (this.state.activePage == "portfolio") {
-            page = <div><TopPresentation text={"Portfolio"} /><FeedCreator /></div>
-        }
-        else if (this.state.activePage == "profile") {
-            page = <div> <TopPresentation text={"Profile"} /> <Profile /> </div>
-        }
-        else if (this.state.activePage == "blog") {
-            page = <div> <TopPresentation text={"Blog"} /> Placeholder blog page! </div>
-        } else {
-            page = <div> There is no path for this link. I dont even know how you got here! </div>
-        }
-
-
-
         return (
             <div>
                 <Router>
@@ -54,20 +41,11 @@ class Site extends React.Component {
                                         <div> <TopPresentation text={"Portfolio"} /> <FeedCreator /> </div>
                                     </Route>
                                     <Route path="/blog">
-                                        <div> <TopPresentation text={"Blog"} /> Placeholder blog page! </div>
+                                        <div> <TopPresentation text={"Blog"} /> <BlogPost /> <BlogPost /> </div>
                                     </Route>
-                                    {Projects.map(
-                                        function (element, index) {
-                                            const TagName = element.ComponentName;
-                                            return (
-                                                <div>
-                                                    <Route path={element.Link}>
-                                                        {element.ComponentName}
-                                                    </Route>
-                                                </div>
-                                            )
-                                        }
-                                    )}
+                                    <Route path="/wavelab">
+                                        <WaveLab />
+                                    </Route>
                                 </div>
                             </Switch>
                         </main>
