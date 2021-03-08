@@ -1,166 +1,206 @@
 .main {
-  
 }
 
 .body {
-  background-color: #FFFDF8;
-  height: 100vh;
-  width: 100vw;
+	background-color: #fffdf8;
+	height: 100vh;
+	width: 100vw;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .profile {
-  width: 60vw;
-  min-width: 400px;
-  min-height: 200px;
-
+	width: 60vw;
+	min-width: 400px;
+	min-height: 200px;
 }
 
 .profilePic {
-  width: 100%;
+	width: 100%;
 }
 
 .topPresentation {
-  width: 60vw;
-  min-width: 400px;
-  border-bottom: #131313;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+	width: 60vw;
+	min-width: 400px;
+	border-bottom: #131313;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 }
 
 .root {
-  display: flex;
+	display: flex;
+	justify-content: center;
 }
 
 .content {
-  padding-top: 64px;
-  flex-grow: 1;
-  background-color: #FFFDF8;
+	padding-top: 64px;
+	flex-grow: 1;
+	background-color: #fffdf8;
+	max-width: 60vw;
 }
 
 .listCard {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-bottom: 16px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding-bottom: 16px;
 }
 
 .listItem {
-  position: relative;
-  width: 70vw;
-  height: 85vh;
-  color: #131313;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	position: relative;
+	width: 70vw;
+	height: 70vw;
+	color: #131313;
+	overflow: hidden;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .listItem img {
-  height: 80%;
-  width: 100%;
-  vertical-align: bottom;
-  object-fit: cover;
+	height: 80%;
+	width: 100%;
+	vertical-align: bottom;
+	object-fit: cover;
 }
 
 .text {
-  height: 20%;
+	height: 20%;
 }
 
 .description {
-  
 }
 
 .sidebar {
-  width: 10vw;
-  flex-shrink: 0;
+	width: 10vw;
+	flex-shrink: 0;
 }
 
 .topbar {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .toolbar {
-  background-color: #FFFDF8;
-  color: #131313;
-  overflow: auto;
+	background-color: #fffdf8;
+	color: #131313;
+	overflow: auto;
 }
 
 .topbarButton {
-  transition: color .2s ease;
+	transition: color 0.2s ease;
 }
 
 .topbarButton:hover {
-  color: #15A0EE !important;
-  cursor: pointer;
+	color: #15a0ee !important;
+	cursor: pointer;
 }
 
 .topbarButton:active {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .link {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .cardImg {
-  object-fit: cover;
-  width: 100%;
-  height: calc(60vw/2);
-  min-height: 200px;
-  vertical-align: bottom;
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+
+.fadeable {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.fadeable:hover {
+	opacity: 0.2;
+}
+
+.fade {
+	-webkit-filter: opacity(30%);
+	filter: opacity(30%);
 }
 
 .cardTextWraper {
-  height: 100%;
-  display: table;
-  background-color: #FFFDF8;
+	height: 100%;
+	display: table;
+	background-color: #fffdf8;
 }
 
 .cardText {
-  display:table-cell;
-  vertical-align: middle;
-  padding-left: 16px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 16px;
 }
 
 .cardTextRight {
-  display:table-cell;
-  vertical-align: middle;
-  padding-right: 16px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 16px;
 }
 
 .ProfessionalInfoCard {
-  width: 60vw;
-  height: calc(60vw/2);
-  min-width: 400px;
-  min-height: 200px;
-  color: #131313;
+	width: 100%;
+	height: 100%;
+	color: #131313;
+	background-color: #fffdf8;
 }
 
 .shadowed {
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .hoverable {
-  transition: transform .5s ease;
-  cursor: pointer;
+	transition: transform 0.5s ease;
+	cursor: pointer;
 }
 
 .hoverable:hover {
-  transform: scale(1.01);
-  z-index: 1;
-  cursor: pointer;
+	transform: scale(1.01);
+	z-index: 1;
+	cursor: pointer;
 }
 
 .infoCardWraper {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-bottom: 16px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.topTitle {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding-bottom: 16px;
 }
 
 .infoText {
-  width: calc(60vw - 16px);
-  min-width: 400px;
+	width: calc(60vw - 16px);
+	min-width: 400px;
+}
+
+.leftPartOfProject {
+	height: 100px;
+	width: 45%;
+	border: 1px solid red;
+	float: left;
+	overflow-y: scroll;
+}
+
+.breadText {
+	white-space: pre-wrap;
+}
+
+#rightPartOfProject {
+	height: 100px;
+	width: 45%;
+	margin-left: 50%;
+	border: 1px solid blue;
+	overflow-y: scroll;
 }

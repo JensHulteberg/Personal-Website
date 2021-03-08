@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 class TopPresentation extends React.Component {
     render() {
         return (
-            <div className="infoCardWraper">
+            <div className="topTitle">
                 <div className="topPresentation">
                     <Typography>
                         <Box fontWeight="fontWeightLight">
