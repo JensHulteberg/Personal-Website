@@ -22,7 +22,7 @@
 }
 
 .topPresentation {
-	width: 60vw;
+	width: 50vw;
 	min-width: 400px;
 	border-bottom: #131313;
 	border-bottom-style: solid;
@@ -36,9 +36,9 @@
 
 .content {
 	padding-top: 64px;
-	flex-grow: 1;
 	background-color: #fffdf8;
-	max-width: 60vw;
+	width: 50vw;
+	min-width: 400px;
 }
 
 .listCard {
