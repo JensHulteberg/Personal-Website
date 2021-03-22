@@ -10,10 +10,11 @@ import video from "../assets/Project pics/flux_wheel/Opal.mp4";
 
 class FluxWheel extends React.Component {
 	render() {
-		var waveLab = Projects[3];
+		var index = 4;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

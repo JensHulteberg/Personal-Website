@@ -7,13 +7,13 @@ import rendering from "../assets/Project pics/alizea_housing/Rendering.jpg";
 import kitchen from "../assets/Project pics/alizea_housing/Kokperspektiv3.jpg";
 import function_render from "../assets/Project pics/alizea_housing/picutre.png";
 
-
 class Alizea extends React.Component {
 	render() {
-		var waveLab = Projects[5];
+		var index = 6;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

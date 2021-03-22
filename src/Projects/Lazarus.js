@@ -10,10 +10,11 @@ import man_and_chair from "../assets/Project pics/the_lazarus_chair/25.png";
 
 class TheLazarusChair extends React.Component {
 	render() {
-		var waveLab = Projects[2];
+		var index = 3;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

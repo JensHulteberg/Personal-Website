@@ -15,6 +15,13 @@ const Projects = [
 		ComponentName: "WaveLab",
 	},
 	{
+		Name: "Tågluffaieuropa.se",
+		Description: "Webshop for selling digital rail passes.",
+		PicPath: "src/assets/tagluffa_square.png",
+		Link: "/tagluffa",
+		ComponentName: "WaveLab",
+	},
+	{
 		Name: "Lazarus Chair",
 		Description: "Tanglible light controlling.",
 		PicPath: "src/assets/lazarus_square.png",
@@ -40,6 +47,13 @@ const Projects = [
 		Description: "Redefining housing with compact living spaces.",
 		PicPath: "src/assets/hallbart_square.png",
 		Link: "/alizea",
+		ComponentName: "WaveLab",
+	},
+	{
+		Name: "Kingz of Wizardz",
+		Description: "Co-op game with wizars fighting each other.",
+		PicPath: "src/assets/kingz_square.png",
+		Link: "/kingz",
 		ComponentName: "WaveLab",
 	},
 ];

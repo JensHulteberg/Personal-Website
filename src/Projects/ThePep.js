@@ -8,10 +8,11 @@ import infographic from "../assets/Project pics/the_pep/infographic.png";
 
 class ThePep extends React.Component {
 	render() {
-		var waveLab = Projects[0];
+		var index = 0;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

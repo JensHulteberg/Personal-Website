@@ -11,10 +11,11 @@ import wave_lab_promo_vid from "../assets/Project pics/wave_lab/promoViddy.mp4";
 
 class WaveLab extends React.Component {
 	render() {
-		var waveLab = Projects[1];
+		var index = 1;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

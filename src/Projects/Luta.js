@@ -8,10 +8,11 @@ import detail from "../assets/Project pics/luta/detail.png";
 
 class Luta extends React.Component {
 	render() {
-		var waveLab = Projects[4];
+		var index = 5;
+		var waveLab = Projects[index];
 		return (
 			<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
-				<TopPresentation text="Project 1" />
+				<TopPresentation text={"Project " + index} />
 				<ProjectCard
 					title={waveLab.Name}
 					undertitle={waveLab.Description}

@@ -14,6 +14,8 @@ import Lazarus from "./Projects/Lazarus";
 import FluxWheel from "./Projects/FluxWheel";
 import Luta from "./Projects/Luta";
 import Alizea from "./Projects/Alizea";
+import Tagluffaieuropa from "./Projects/Tagluffaieuropa";
+import Kingz from "./Projects/kings";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -78,6 +80,12 @@ class Site extends React.Component {
 									</Route>
 									<Route path="/alizea">
 										<Alizea />
+									</Route>
+									<Route path="/tagluffa">
+										<Tagluffaieuropa />
+									</Route>
+									<Route path="/kingz">
+										<Kingz />
 									</Route>
 								</div>
 							</Switch>

@@ -23,10 +23,10 @@ class FeedCreator extends React.Component {
 		console.log(this.props);
 		return (
 			<div>
-				<Grid container spacing={2} justify="center" alignItems="stretch">
+				<Grid container spacing={2} justify="flex-start" alignItems="stretch">
 					{Projects.map(function (element, index) {
 						return (
-							<Grid item xs={4} key={index}>
+							<Grid item xs={12} sm={4} key={index}>
 								<ProfessionalInfoCard
 									Name={element.Name}
 									Description={element.Description}
