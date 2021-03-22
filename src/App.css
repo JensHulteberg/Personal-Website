@@ -3,7 +3,7 @@
 
 .body {
 	background-color: #fffdf8;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 }
 
@@ -82,7 +82,6 @@
 }
 
 .toolbar {
-	background-color: #fffdf8;
 	color: #131313;
 	overflow: auto;
 }
@@ -134,7 +133,6 @@
 
 .cardText {
 	display: table-cell;
-	vertical-align: middle;
 	padding-left: 16px;
 }
 
@@ -157,12 +155,12 @@
 }
 
 .hoverable {
-	transition: transform 0.5s ease;
+	transition: transform 0.0s ease;
 	cursor: pointer;
 }
 
 .hoverable:hover {
-	transform: scale(1.01);
+	transform: scale(1);
 	z-index: 1;
 	cursor: pointer;
 }

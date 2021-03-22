@@ -4,7 +4,7 @@ import ProjectCard from "./Projects/ProjectCard";
 import { ENETUNREACH } from "constants";
 import ProfessionalListItem from "./professionalComponents/ProfessionalListItem";
 import ProfessionalInfoCard from "./professionalComponents/ProfessionalInfoCard";
-import { Grid, Typography, Dialog } from "@material-ui/core";
+import { Grid, Typography, Dialog, Box } from "@material-ui/core";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -23,12 +23,11 @@ class FeedCreator extends React.Component {
 		console.log(this.props);
 		return (
 			<div>
-				<Grid container spacing={1} justify="center" alignItems="stretch">
+				<Grid container spacing={2} justify="center" alignItems="stretch">
 					{Projects.map(function (element, index) {
 						return (
-							<Grid item xs={4}>
+							<Grid item xs={4} key={index}>
 								<ProfessionalInfoCard
-									key={index}
 									Name={element.Name}
 									Description={element.Description}
 									PicPath={element.PicPath}
@@ -37,6 +36,16 @@ class FeedCreator extends React.Component {
 							</Grid>
 						);
 					})}
+					<Grid item xs={12}>
+						<Box
+							style={{
+								borderTop: "#131313",
+								borderTopStyle: "solid",
+								borderTopWidth: "1px",
+								width: "100%",
+							}}
+						></Box>
+					</Grid>
 				</Grid>
 			</div>
 		);

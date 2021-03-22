@@ -22,6 +22,7 @@ class WaveLab extends React.Component {
 					bread={
 						"Wave labs is a connected system of vibrating media designed to make you curious to ask the first question of how and why things vibrate. Through the common medium of sound the system vibrates not only the air around you but also a liquid and a solid object. Through hearing, touch and vision you can experience the effect of the soundwaves with these different medias. \n\n The Wave labs uses sound as the basis for learning. Thus it also uses a symbol for sound as a controller. By rotating a vinyl plate you can create all frequencies in the hearable spectrum. That same wavelength is then also applied to both a chladni plate and the water. This way a user gets direct feedback on how a wavelength interacts with different media. \n\n Our aim was from start to finish the creative learning experience one can have when exploring science. The system has no text or instructions just a vinyl plate that can be rotated to create the wave. People approach the sytem eager to explore the soundscape and its interaction with the different media. But they leave it with a bit more understanding of what waves are and how they interact."
 					}
+					external_link={"http://www.idxpo.se/2019/WaveLabsWebsite/index.html"}
 					pics={[
 						{ type: "vid", source: wave_lab_promo_vid },
 						{ type: "img", source: detail_plate },

@@ -45,15 +45,13 @@ class Site extends React.Component {
 									<Route exact path="/">
 										<div>
 											{" "}
-											<TopPresentation text={"Profile"} /> <Profile />{" "}
+											<TopPresentation text={"Projects"} /> <FeedCreator />{" "}
 										</div>
 									</Route>
-									<Route path="/portfolio">
+									<Route path="/profile">
 										<div>
 											{" "}
-											<TopPresentation
-												text={"Portfolio"}
-											/> <FeedCreator />{" "}
+											<TopPresentation text={"Profile"} /> <Profile />{" "}
 										</div>
 									</Route>
 									<Route path="/blog">
