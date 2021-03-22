@@ -72,7 +72,7 @@ class Site extends React.Component {
 									<Route path="/lazarus">
 										<Lazarus />
 									</Route>
-									<Route path="/fluxwheel">
+									<Route path="/opal">
 										<FluxWheel />
 									</Route>
 									<Route path="/luta">

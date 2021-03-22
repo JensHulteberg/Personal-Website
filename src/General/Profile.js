@@ -28,7 +28,7 @@ class Profile extends React.Component {
 						alignItems="stretch"
 						spacing={2}
 					>
-						<Grid item xs={4}>
+						<Grid item xs={12} sm={4}>
 							<Fade in={this.state.pic_loaded} timeout={500}>
 								<img
 									className="profilePic"
@@ -37,10 +37,10 @@ class Profile extends React.Component {
 								/>
 							</Fade>
 						</Grid>
-						<Grid item xs={8}>
+						<Grid item xs={12} sm={8}>
 							<div className="cardTextWraper">
 								<div className="cardText">
-									<Fade in={true}  timeout={500}>
+									<Fade in={true} timeout={500}>
 										<Typography>
 											<Box fontWeight="fontWeightLight">
 												<p>

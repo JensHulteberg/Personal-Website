@@ -20,14 +20,17 @@ class FluxWheel extends React.Component {
 					undertitle={waveLab.Description}
 					tags={"TANGLIBLE DESIGN"}
 					bread={
-						"Fluxwheel is an IOT (internet of things) light controller that  uses simple tanglible interactions to modfiy lighting in a domestic enviorment. \n\n By spinning, flipping and shaking the token a user can select an active light, turn it on and change both color and intensity of the light source. All this without a single instruction and only one line of feedback, that is the light strip that mimics the active light source intensity and color. \n\n The FluxWheel contains a complex combintation of rotary-encoders and gyroscopes that facilitates the interactions and can thus be both spun and flipped without needing any kind of external sensor or base-station."
+						"Opal is an IOT (internet of things) light controller that  uses simple tanglible interactions to modfiy lighting in a domestic enviorment. \n\n By spinning, flipping and shaking the token a user can select an active light, turn it on and change both color and intensity of the light source. All this without a single instruction and only one line of feedback, that is the light strip that mimics the active light source intensity and color. \n\n The FluxWheel contains a complex combintation of rotary-encoders and gyroscopes that facilitates the interactions and can thus be both spun and flipped without needing any kind of external sensor or base-station."
 					}
+					leadingImg={flux_room}
 					pics={[
 						{ type: "vid", source: video },
-						{ type: "img", source: flux_room },
 						{ type: "img", source: flux_wheel },
 						{ type: "img", source: infographic },
 					]}
+					trailText={
+						"Created as part of a course at Chalmers University of Technology together with: Simon Mare, Sten Rõngelep, Mike Shirnazar, Johannes Kjellberg"
+					}
 				/>
 			</div>
 		);

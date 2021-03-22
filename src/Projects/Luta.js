@@ -20,8 +20,8 @@ class Luta extends React.Component {
 					bread={
 						"Luta is an ergonomic workspace for industrial soldering workers made to be as ergonomic as possible. It utilizes a plethora of functions to create a working environment that is both safe and healthy and prevent fatigue injury during long work days. \n\n Made with the users in mind the design of Luta is based on a substantial battery of data gathered through an extensive user study on industrial workers."
 					}
+					leadingImg={luta}
 					pics={[
-						{ type: "img", source: luta },
 						{ type: "img", source: detail },
 					]}
 				/>

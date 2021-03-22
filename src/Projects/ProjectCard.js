@@ -29,14 +29,18 @@ class ProjectCard extends React.Component {
 			current_pic_clicked: "",
 			dialog_open: false,
 			pics_loaded_status: pics_loaded,
+			leading_pic_loaded: false,
 		};
 	}
 
 	handlePicLoaded(index) {
-		var list = this.state.pics_loaded_status;
-		list[index] = true;
-		this.setState({ pics_loaded_status: list });
-		console.log(list);
+		if (index == "leading") {
+			this.setState({ leading_pic_loaded: true });
+		} else {
+			var list = this.state.pics_loaded_status;
+			list[index] = true;
+			this.setState({ pics_loaded_status: list });
+		}
 	}
 
 	handleClickOnPic(pic) {
@@ -76,6 +80,15 @@ class ProjectCard extends React.Component {
 						width: "100%",
 					}}
 				></Box>
+				<Grid item xs={12}>
+					<Fade in={this.state.leading_pic_loaded} timeout={500}>
+						<img
+							className="cardImg"
+							onLoad={() => this.handlePicLoaded("leading")}
+							src={this.props.leadingImg}
+						/>
+					</Fade>
+				</Grid>
 				<Grid item xs={12}>
 					<Fade in={true} timeout={500}>
 						<Grid container>
@@ -158,14 +171,13 @@ class ProjectCard extends React.Component {
 					return output;
 				})}
 				<Grid item xs={12}>
-					<Box
-						style={{
-							borderTop: "#131313",
-							borderTopStyle: "solid",
-							borderTopWidth: "1px",
-							width: "100%",
-						}}
-					></Box>
+					<Fade in={true} timeout={500}>
+						<Typography variant="body1">
+							<Box fontWeight="fontWeightLight" className="breadText">
+								{this.props.trailText}
+							</Box>
+						</Typography>
+					</Fade>
 				</Grid>
 			</Grid>
 		);

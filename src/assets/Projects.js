@@ -29,10 +29,10 @@ const Projects = [
 		ComponentName: "lazarus",
 	},
 	{
-		Name: "Fluxwheel",
+		Name: "Opal",
 		Description: "Tanglible light controlling.",
 		PicPath: "src/assets/fluxwheel_square.jpg",
-		Link: "/fluxwheel",
+		Link: "/opal",
 		ComponentName: "WaveLab",
 	},
 	{
