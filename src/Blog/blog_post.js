@@ -29,38 +29,29 @@ class blog_post extends React.Component {
 						alignItems="center"
 						spacing={2}
 					>
-						<Grid item xs={4}>
+						<Grid item xs={12}>
+							<Typography>
+								<Box fontWeight="fontWeightLight">{this.props.date}</Box>
+							</Typography>
+						</Grid>
+						<Grid item xs={12}>
 							<Fade in={this.state.pic_loaded} timeout={500}>
 								<img
 									className="profilePic"
-									src={slugman}
+									src={this.props.pic}
 									onLoad={() => this.handlePicLoaded()}
 								/>
 							</Fade>
 						</Grid>
-						<Grid item xs={8}>
-							<div className="cardTextWraper">
-								<div className="cardText">
-									<Fade in={true} timeout={500}>
-										<Typography>
-											<Box fontWeight="fontWeightLight">
-												<p>This is a blob post title!</p>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit, sed do eiusmod tempor incididunt ut labore et
-													dolore magna aliqua. Ut enim ad minim veniam, quis
-													nostrud exercitation ullamco laboris nisi ut aliquip
-													ex ea commodo consequat. Duis aute irure dolor in
-													reprehenderit in voluptate velit esse cillum dolore eu
-													fugiat nulla pariatur. Excepteur sint occaecat
-													cupidatat non proident, sunt in culpa qui officia
-													deserunt mollit anim id est laborum.
-												</p>
-											</Box>
-										</Typography>
-									</Fade>
-								</div>
-							</div>
+						<Grid item xs={12}>
+							<Fade in={true} timeout={500}>
+								<Typography>
+									<Box fontWeight="fontWeightLight" className="breadText">
+										{this.props.title + "\n\n"}
+										{this.props.bread}
+									</Box>
+								</Typography>
+							</Fade>
 						</Grid>
 					</Grid>
 				</div>

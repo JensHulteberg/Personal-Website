@@ -7,6 +7,7 @@ import FeedCreator from "./FeedCreator";
 import Profile from "./General/Profile";
 import Projects from "./assets/Projects";
 import BlogPost from "./Blog/blog_post";
+import Blog_generator from "./Blog/blog_generator";
 
 import WaveLab from "./Projects/WaveLab";
 import ThePep from "./Projects/ThePep";
@@ -61,8 +62,8 @@ class Site extends React.Component {
 									<Route path="/blog">
 										<div>
 											{" "}
-											<TopPresentation text={"Blog"} /> <BlogPost />{" "}
-											<BlogPost />{" "}
+											<TopPresentation text={"Blog"} />
+											<Blog_generator />
 										</div>
 									</Route>
 									<Route path={Projects[0].Link}>
