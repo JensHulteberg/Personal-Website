@@ -155,7 +155,7 @@
 }
 
 .hoverable {
-	transition: transform 0.0s ease;
+	transition: transform 0s ease;
 	cursor: pointer;
 }
 
