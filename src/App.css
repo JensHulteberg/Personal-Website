@@ -11,19 +11,11 @@
 	display: none;
 }
 
-.profile {
-	width: 60vw;
-	min-width: 400px;
-	min-height: 200px;
-}
-
 .profilePic {
 	width: 100%;
 }
 
 .topPresentation {
-	width: 50vw;
-	min-width: 400px;
 	border-bottom: #131313;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -37,8 +29,6 @@
 .content {
 	padding-top: 64px;
 	background-color: #fffdf8;
-	width: 40vw;
-	min-width: 500px;
 }
 
 .listCard {
@@ -174,13 +164,10 @@
 .topTitle {
 	justify-content: center;
 	align-items: center;
-	display: flex;
 	padding-bottom: 16px;
 }
 
 .infoText {
-	width: calc(60vw - 16px);
-	min-width: 400px;
 }
 
 .leftPartOfProject {

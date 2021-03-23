@@ -20,7 +20,7 @@ class Profile extends React.Component {
 	render() {
 		return (
 			<div className="infoCardWraper">
-				<div className="profile">
+				<div>
 					<Grid
 						container
 						direction="row"
