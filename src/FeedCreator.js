@@ -20,7 +20,6 @@ class FeedCreator extends React.Component {
 	}
 
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<Grid container spacing={2} justify="flex-start" alignItems="stretch">

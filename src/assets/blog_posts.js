@@ -1,5 +1,12 @@
 const Blog_posts = [
 	{
+		Date: "2021-03-29",
+		Title: "running cycle #1",
+		PicPath: "assets/blog pics/cycle.gif",
+		bread:
+			"",
+	},
+	{
 		Date: "2021-03-23",
 		Title: "A start",
 		PicPath: "assets/blog pics/slugman.png",
