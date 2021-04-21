@@ -51,7 +51,6 @@ class Site extends React.Component {
 								direction="column"
 								justify="center"
 								alignItems="center"
-								spacing={2}
 								className="content"
 							>
 								<Grid item xs={10} sm={6}>
