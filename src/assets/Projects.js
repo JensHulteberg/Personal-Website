@@ -3,37 +3,87 @@ const Projects = [
 		Name: "The PEP",
 		Description: "Tanglible light controlling.",
 		PicPath: "src/assets/pep_square.png",
+		LeadingImg: require("./Project pics/the_pep/front_detail.png"),
+		pics: [
+			{
+				type: "img",
+				source: require("./Project pics/the_pep/man_with_phone_white.png"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/the_pep/infographic.png"),
+			},
+		],
 		Link: "/pep",
 		tags: "SPECUALTIVE DESIGN",
 		bread:
 			"The PEP-device is a complex wearable that harvests the user's body heat in order to generate a personal storage of electricity. The stored electricity can then be consumed as the users see fit: powering their personal devices, sharing it with others, or selling the electricity back to the power grid.\n\n The PEP is a speculative design existing in a potential future where electricity is scarce and society has pivoten towards other more novel ways of producing electricity. The aim of the product is to explore our relationship towards technology, the bond between human and phone and the stresses of extensive technology use today. \n\n The PEP was created as part of my masters thesis at Chalmers University of Technology in collaboration with RISE (Research Institutes of Sweden). The artifact and the masters thesis was created by a two person team myself and Vendela Stensson.",
 		ComponentName: "pep",
+		ExternalLink: "http://www.seebeck.se",
 	},
 	{
 		Name: "Wave Labs",
 		Description:
 			"An interactive tabletop designed to teach teens about Waves and their interaction in different media.",
+		LeadingImg: require("./Project pics/wave_lab/leading.png"),
 		PicPath: "src/assets/wavelab.jpg",
+		pics: [
+			{
+				type: "vid",
+				source: require("./Project pics/wave_lab/promoViddy.mp4"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/wave_lab/_MG_6295.jpg"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/wave_lab/DSC07978.jpg"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/wave_lab/experiment.jpg"),
+			},
+		],
 		Link: "/waveLab",
 		tags: "INTERACTIVE DESIGN",
 		bread:
 			"Wave labs is a connected system of vibrating media designed to make you curious to ask the first question of how and why things vibrate. Through the common medium of sound the system vibrates not only the air around you but also a liquid and a solid object. Through hearing, touch and vision you can experience the effect of the soundwaves with these different media. \n\n The Wave labs uses sound as the basis for learning. Thus it also uses a symbol for sound as a controller. By rotating a vinyl plate you can create all frequencies in the hearable spectrum. That same wavelength is then also applied to both a chladni plate and the water. This way a user gets direct feedback on how a wavelength interacts with different media. \n\n Our aim was, from start to finish, the creative learning experience one can have when exploring science. The system has no text or instructions, just a vinyl plate that can be rotated to create the wave. People approach the system eager to explore the soundscape and its interaction with the different media. But they leave it with a bit more understanding of what waves are and how they interact. \n\n Wave Labs was created as part of a course at Chalmers University of Technology under the theme of “visualizing the invisible”. My teammates on the project where: Simon Mare, Sten Rõngelep, Mike Shirnazar, Johannes Kjellberg and Sjoerd Hendriks.",
 		ComponentName: "WaveLab",
+		ExternalLink: "http://www.idxpo.se/2019/WaveLabsWebsite/index.html",
 	},
 	{
 		Name: "Tågluffaieuropa.se",
 		Description: "Webshop for selling digital rail passes.",
 		PicPath: "src/assets/tagluffa_square.png",
+		LeadingImg: require("./Project pics/tagluffa/tagluffa_demo.png"),
+		pics: [{ type: "img", source: null }],
 		Link: "/tagluffa",
 		tags: "WEB DESIGN / DEVELOPMENT",
 		bread:
 			"Tagluffaieuropa.se is a travel guide website both designed, developed, and maintained by me and a college. The goal of the website is to provide informational and trustworthy guidance to help travellers make informed decisions and plan their vacations in advance. The site also works as a web shop, where it is possible to book and buy interrail tickets for a future vacation. Tågluffaieuropa.se is made with React and JavaScript and uses a MySQL-database to store relevant information. \n\n Tagluffaieuropa.se is an active project and the site is still in development. The current build can be found through the external link provided below. The development of the site is done in our free time and we hope to launch the site soon. My collaborator on this project is Emil Andersson.",
 		ComponentName: "WaveLab",
+		ExternalLink: "http://www.tagluffaieuropa.se",
 	},
 	{
 		Name: "Lazarus Chair",
 		Description: "Tanglible light controlling.",
 		PicPath: "src/assets/lazarus_square.png",
+		LeadingImg: require("./Project pics/the_lazarus_chair/leading.png"),
+		pics: [
+			{
+				type: "img",
+				source: require("./Project pics/the_lazarus_chair/23.png"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/the_lazarus_chair/24.png"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/the_lazarus_chair/25.png"),
+			},
+		],
 		Link: "/lazarus",
 		tags: "SPECUALTIVE DESIGN",
 		bread:
@@ -44,6 +94,21 @@ const Projects = [
 		Name: "Opal",
 		Description: "Tanglible light controlling.",
 		PicPath: "src/assets/fluxwheel_square.jpg",
+		LeadingImg: require("./Project pics/flux_wheel/FluxRoom2.jpg"),
+		pics: [
+			{
+				type: "vid",
+				source: require("./Project pics/flux_wheel/Opal.mp4"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/flux_wheel/fluxwheel.jpg"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/flux_wheel/infromationposter_rotated.png"),
+			},
+		],
 		Link: "/opal",
 		tags: "TANGLIBLE DESIGN",
 		bread:
@@ -54,6 +119,13 @@ const Projects = [
 		Name: "Luta",
 		Description: "Ergonomic workspace for circuit board production workers.",
 		PicPath: "src/assets/luta_square.png",
+		LeadingImg: require("./Project pics/luta/luta.png"),
+		pics: [
+			{
+				type: "img",
+				source: require("./Project pics/luta/detail.png"),
+			},
+		],
 		Link: "/luta",
 		tags: "INDUSTRIAL DESIGN",
 		bread:
@@ -64,6 +136,21 @@ const Projects = [
 		Name: "Alizea housing",
 		Description: "Redefining housing with compact living spaces.",
 		PicPath: "src/assets/hallbart_square.png",
+		LeadingImg: require("./Project pics/alizea_housing/Rendering.jpg"),
+		pics: [
+			{
+				type: "img",
+				source: require("./Project pics/alizea_housing/Huset.jpg"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/alizea_housing/Kokperspektiv3.jpg"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/alizea_housing/picutre.png"),
+			},
+		],
 		Link: "/alizea",
 		tags: "INDUSTRIAL DESIGN",
 		bread:
@@ -74,11 +161,27 @@ const Projects = [
 		Name: "Kingz of Wizardz",
 		Description: "Co-op game with wizars fighting each other.",
 		PicPath: "src/assets/kingz_square.png",
+		LeadingImg: require("./Project pics/kingz/leading.png"),
+		pics: [
+			{
+				type: "img",
+				source: require("./Project pics/kingz/intro.PNG"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/kingz/play.PNG"),
+			},
+			{
+				type: "img",
+				source: require("./Project pics/kingz/death.PNG"),
+			},
+		],
 		Link: "/kingz",
 		tags: "GAME DEVELOPMENT",
 		bread:
 			"It is Halloween, the year 19XX and the moon hangs low over a tiny village on the outskirts of Duskvale County. But this is no ordinary town. In this godforsaken place, two ancient wizards rise from the grave, on All Hallows' Eve, to duke it out in an all-out, fireball-fueled wizard battle. Caught in the crossfire of this ancient grudge are the villagers. These peaceful skeletons and humans, friends by day, are at night forced by the wizards into a terrible battle. \n\n In this two-player nightmare, take up arms as Malufix, the Wizard of Light, or his immortal enemy, the Dark Warlock Bulfass. Burn your enemies and be the lone winner when the sun's first rays break the dawn. Who will win and become The King of Wizards? \n\n Kingz of Wizards is a tiny game created during a self organised game-jam. The other participants of the jam were:  Fabian Sörensson, Joel Heinerud, Magnus Bosch Huttu and Jakob Jarmar.",
 		ComponentName: "WaveLab",
+		ExternalLink: "https://www.lexaloffle.com/bbs/?pid=58761",
 	},
 ];
 

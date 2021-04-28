@@ -3,17 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Fade from "@material-ui/core/Fade";
-import Paper from "@material-ui/core/Paper";
-import PLACEHOLDERIMAGE from "../assets/imgplaceholder.jpg";
-import slugman from "../assets/slugman_profile.png";
-import {
-	Divider,
-	Dialog,
-	DialogTitle,
-	DialogContent,
-	IconButton,
-} from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
+import { Dialog, DialogContent } from "@material-ui/core";
 import "../../node_modules/video-react/dist/video-react.css";
 import { Player } from "video-react";
 

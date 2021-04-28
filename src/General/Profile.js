@@ -4,7 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import profilePic from "../assets/slugman_profile.png";
-import Grow from "@material-ui/core/Grow";
 import Fade from "@material-ui/core/Fade";
 
 class Profile extends React.Component {
