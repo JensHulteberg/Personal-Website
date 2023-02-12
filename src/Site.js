@@ -51,7 +51,6 @@ class Site extends React.Component {
 								direction="column"
 								justify="center"
 								alignItems="center"
-								spacing={2}
 								className="content"
 							>
 								<Grid item xs={10} sm={6}>
@@ -71,13 +70,13 @@ class Site extends React.Component {
 													<TopPresentation text={"Profile"} /> <Profile />{" "}
 												</div>
 											</Route>
-											<Route path="/blog">
+										{/* 	<Route path="/blog">
 												<div>
 													{" "}
 													<TopPresentation text={"Blog"} />
 													<Blog_generator />
 												</div>
-											</Route>
+											</Route> */}
 											<Route path={Projects[0].Link}>
 												<ProjectCardWrapper
 													index={0}
@@ -148,11 +147,36 @@ class Site extends React.Component {
 															source: require("./assets/Project pics/the_lazarus_chair/25.png"),
 														},
 													]}
+													externalLink={"https://www.figma.com/proto/77BZkBMk4ktkSuErb7me64/Lazarus-Chair-Presentation?node-id=8%3A170&scaling=min-zoom&page-id=0%3A1"}
 												/>
 											</Route>
 											<Route path={Projects[4].Link}>
 												<ProjectCardWrapper
 													index={4}
+													pics={[
+														{
+															type: "img",
+															source: require("./assets/Project pics/mutant/char_sheet_full.png"),
+														},
+													]}
+												/>
+											</Route>
+											<Route path={Projects[5].Link}>
+												<ProjectCardWrapper
+													index={5}
+													leadingImg={require("./assets/Project pics/dromarkivet/stage.png")}
+													pics={[
+														{
+															type: "img",
+															source: require("./assets/Project pics/dromarkivet/dromarkivet_model.png"),
+														},
+													]}
+													externalLink={"https://www.altitudteatern.com/kopia-p%C3%A5-kommande-f%C3%B6rest%C3%A4llningar"}
+												/>
+											</Route>
+											<Route path={Projects[6].Link}>
+												<ProjectCardWrapper
+													index={6}
 													leadingImg={require("./assets/Project pics/flux_wheel/FluxRoom2.jpg")}
 													pics={[
 														{
@@ -170,9 +194,9 @@ class Site extends React.Component {
 													]}
 												/>
 											</Route>
-											<Route path={Projects[5].Link}>
+											<Route path={Projects[7].Link}>
 												<ProjectCardWrapper
-													index={5}
+													index={7}
 													leadingImg={require("./assets/Project pics/luta/luta.png")}
 													pics={[
 														{
@@ -182,9 +206,9 @@ class Site extends React.Component {
 													]}
 												/>
 											</Route>
-											<Route path={Projects[6].Link}>
+											<Route path={Projects[8].Link}>
 												<ProjectCardWrapper
-													index={6}
+													index={8}
 													leadingImg={require("./assets/Project pics/alizea_housing/Rendering.jpg")}
 													pics={[
 														{
@@ -202,9 +226,9 @@ class Site extends React.Component {
 													]}
 												/>
 											</Route>
-											<Route path={Projects[7].Link}>
+											<Route path={Projects[9].Link}>
 												<ProjectCardWrapper
-													index={7}
+													index={9}
 													leadingImg={require("./assets/Project pics/kingz/leading.png")}
 													pics={[
 														{

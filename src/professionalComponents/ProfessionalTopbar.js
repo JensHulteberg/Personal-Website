@@ -41,7 +41,7 @@ class ProfessionalTopbar extends React.Component {
 												</Typography>
 											</Link>
 										</Grid>
-										<Grid item>
+										{/* <Grid item>
 											<Link className="link" to="/blog">
 												<Typography
 													className="topbarButton"
@@ -55,7 +55,7 @@ class ProfessionalTopbar extends React.Component {
 													<Box fontWeight="fontWeightLight">Blog</Box>
 												</Typography>
 											</Link>
-										</Grid>
+										</Grid> */}
 										<Grid item>
 											<Link className="link" to="/profile">
 												<Typography
