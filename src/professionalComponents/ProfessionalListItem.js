@@ -1,5 +1,4 @@
 import React from "react";
-import PLACEHOLDERIMAGE from "../assets/imgplaceholder.jpg";
 import Grow from "@material-ui/core/Grow";
 
 class ProfessionalListItem extends React.Component {

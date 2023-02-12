@@ -1,16 +1,8 @@
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import PLACEHOLDERIMAGE from "../assets/imgplaceholder.jpg";
-import slugman from "../assets/slugman_profile.png";
 import Link from "react-router-dom/Link";
-import Grow from "@material-ui/core/Grow";
 import Fade from "@material-ui/core/Fade";
-import { useState } from "react";
 
 class ProfessionalInfoCard extends React.Component {
 	constructor(props) {

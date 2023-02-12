@@ -1,7 +1,7 @@
 import React from "react";
 import blog_posts from "../assets/blog_posts";
 import Blog_post from "./blog_post";
-import { Grid, Typography, Dialog, Box, Container } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 function BlogGenerator(props) {
 	return (

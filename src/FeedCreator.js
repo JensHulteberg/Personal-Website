@@ -1,16 +1,7 @@
 import React from "react";
 import Projects from "./assets/Projects";
-import ProjectCard from "./Projects/ProjectCard";
-import { ENETUNREACH } from "constants";
-import ProfessionalListItem from "./professionalComponents/ProfessionalListItem";
 import ProfessionalInfoCard from "./professionalComponents/ProfessionalInfoCard";
-import { Grid, Typography, Dialog, Box } from "@material-ui/core";
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	useRouteMatch,
-} from "react-router-dom";
+import { Grid, Box } from "@material-ui/core";
 
 var match;
 

@@ -1,30 +1,27 @@
 import React from "react";
-import Projects from "./../assets/Projects";
 import ProjectCard from "./ProjectCard";
-import TopPresentation from "../professionalComponents/TopPresentation";
 import Grid from "@material-ui/core/Grid";
 import { Box, Typography, Fade } from "@material-ui/core";
-import Link from "react-router-dom/Link";
+import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 
 function ProjectCardWrapper(props) {
 	let History = useHistory();
 
 	function handleClickNext() {
-		History.push(Projects[props.index + 1].Link);
+		History.push(props.nextPath);
 	}
 
 	function handleClickPrev() {
-		History.push(Projects[props.index - 1].Link);
+		History.push(props.prevPath);
 	}
 
 	var index = props.index;
-	var project = Projects[index];
 	return (
 		<div style={{ paddingBottom: "16px", overflow: "hidden" }}>
 			<Grid container>
 				<Grid item xs={2}>
-					{props.index == 0 ? (
+					{!props.prevPath ? (
 						<div></div>
 					) : (
 						<Link className="link" onClick={(event) => event.preventDefault()}>
@@ -47,7 +44,7 @@ function ProjectCardWrapper(props) {
 				</Grid>
 				<Grid item xs={8}></Grid>
 				<Grid item xs={2}>
-					{props.index >= Projects.length - 1 ? (
+					{!props.nextPath ? (
 						<div></div>
 					) : (
 						<Link className="link" onClick={(event) => event.preventDefault()}>
@@ -79,10 +76,10 @@ function ProjectCardWrapper(props) {
 				></Box>
 			</Grid>
 			<ProjectCard
-				title={project.Name}
-				undertitle={project.Description}
-				tags={project.tags}
-				bread={project.bread}
+				title={props.name}
+				undertitle={props.undertitle}
+				tags={props.tags}
+				bread={props.bread}
 				leadingImg={props.leadingImg}
 				pics={props.pics}
 				external_link={props.externalLink}
